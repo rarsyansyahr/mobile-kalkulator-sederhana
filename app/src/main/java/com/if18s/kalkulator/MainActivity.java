@@ -75,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
 
                 if (input1.equals("") || input2.equals("") || (input1.equals("") && input2.equals(""))) {
                     Toast.makeText(getApplicationContext(), "Input bilangan harus isi..", Toast.LENGTH_LONG).show();
+                } else if(operasi.equals("")) {
+                    Toast.makeText(getApplicationContext(), "Operasi Aritmatika belum dipilih..", Toast.LENGTH_LONG).show();
                 } else {
                     double bil1 = Double.parseDouble(input1);
                     double bil2 = Double.parseDouble(input2);
